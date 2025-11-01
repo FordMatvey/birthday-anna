@@ -5,111 +5,159 @@
   <title>День рождения любимой</title>
   <style>
     body {
-      background: linear-gradient(to bottom right, #fff0f5, #ffe4e1);
-      font-family: 'Segoe UI', sans-serif;
-      color: #333;
-      margin: 0;
-      padding: 0;
-      transition: background 1s ease;
-    }
-    body.night {
-      background: radial-gradient(circle at top, #1a1a2e, #16213e);
-      color: #f0f0f0;
-    }
-    .container {
-      max-width: 700px;
-      margin: 50px auto;
-      background: #ffffffcc;
-      border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      padding: 40px;
-      text-align: center;
-      transition: background 1s ease, color 1s ease;
-    }
-    body.night .container {
-      background: #2c2c54cc;
-      color: #f0f0f0;
-    }
-    h1 {
-      color: #ff69b4;
-      font-size: 32px;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 18px;
-      line-height: 1.8;
-      margin-bottom: 20px;
-    }
-    .gift-list {
-      margin: 20px 0;
-      padding: 0;
-      list-style: none;
-    }
-    .gift-list li {
-      background: #ffe0f0;
-      margin: 8px 0;
-      padding: 10px;
-      border-radius: 8px;
-      font-size: 16px;
-    }
-    body.night .gift-list li {
-      background: #3d3d5c;
-    }
-    img {
-      max-width: 100%;
-      border-radius: 12px;
-      margin: 20px 0;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    audio {
-      display: none;
-    }
-    .footer {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #999;
-    }
-    .button {
-      background: #ff69b4;
-      color: white;
-      border: none;
-      padding: 12px 24px;
-      font-size: 16px;
-      border-radius: 8px;
-      cursor: pointer;
-      margin: 10px;
-      transition: background 0.3s ease;
-    }
-    .button:hover {
-      background: #ff85c1;
-    }
-    #secret {
-      display: none;
-      margin-top: 30px;
-      font-size: 18px;
-      background: #fff0f5;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    body.night #secret {
-      background: #3d3d5c;
-    }
-    @keyframes heartbeat {
-      0%   { transform: scale(1); }
-      25%  { transform: scale(1.1); }
-      40%  { transform: scale(0.95); }
-      60%  { transform: scale(1.05); }
-      100% { transform: scale(1); }
-    }
-    .heartbeat {
-      display: inline-block;
-      animation: heartbeat 1s infinite;
-      transition: transform 0.2s ease-in-out;
-      font-size: 20px;
-      font-weight: bold;
-      margin-top: 10px;
-    }
+  background: linear-gradient(to bottom right, #fff0f5, #ffe4e1);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  transition: background 1s ease;
+}
+
+body.night {
+  background: radial-gradient(circle at top, #1a1a2e, #16213e);
+  color: #f0f0f0;
+}
+
+.container {
+  max-width: 700px;
+  margin: 20px auto;
+  background: #ffffffcc;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  padding: 30px;
+  text-align: center;
+  transition: background 1s ease, color 1s ease;
+}
+
+body.night .container {
+  background: #2c2c54cc;
+  color: #f0f0f0;
+}
+
+h1 {
+  color: #ff69b4;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.gift-list {
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gift-list li {
+  background: #ffe0f0;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+body.night .gift-list li {
+  background: #3d3d5c;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+audio {
+  display: none;
+}
+
+.footer {
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #999;
+}
+
+.button {
+  background: #ff69b4;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #ff85c1;
+}
+
+#secret {
+  display: none;
+  margin-top: 30px;
+  font-size: 1em;
+  background: #fff0f5;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+body.night #secret {
+  background: #3d3d5c;
+}
+
+@keyframes heartbeat {
+  0%   { transform: scale(1); }
+  25%  { transform: scale(1.1); }
+  40%  { transform: scale(0.95); }
+  60%  { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.heartbeat {
+  display: inline-block;
+  animation: heartbeat 1s infinite;
+  transition: transform 0.2s ease-in-out;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* 📱 Адаптация для мобильных */
+@media (max-width: 600px) {
+  .container {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 0.95em;
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+
+  .heartbeat {
+    font-size: 1em;
+  }
+
+  #secret {
+    font-size: 0.95em;
+    padding: 15px;
+  }
+}
   </style>
 </head>
 <body>
